@@ -1,50 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sathyaraja Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sathyaraja Chitravel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f172a;color:#e2e8f0;line-height:1.6}
+    .container{max-width:1100px;margin:auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+    nav a{color:#e2e8f0;margin-left:20px;text-decoration:none;font-weight:500}
+    nav a:hover{color:#38bdf8}
+    .hero{padding:60px 0;text-align:center}
+    .hero h1{font-size:42px}
+    .hero p{margin-top:10px;color:#94a3b8}
+    .btn{display:inline-block;margin-top:20px;padding:10px 20px;border-radius:8px;background:#38bdf8;color:#0f172a;text-decoration:none;font-weight:600}
+    section{margin-top:60px}
+    h2{margin-bottom:20px;border-bottom:2px solid #38bdf8;display:inline-block;padding-bottom:5px}
+    .skills,.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .card{background:#1e293b;padding:20px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
+    footer{text-align:center;margin-top:60px;color:#94a3b8}
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h2>Sathyaraja</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<h1>Sathyaraja Chitravel</h1>
+    <section class="hero">
+      <h1>IBM i / AS400 Developer</h1>
+      <p>RPGLE | CL | DB2 | AWS Cloud Practitioner (In Progress)</p>
+      <a class="btn" href="#contact">Contact Me</a>
+    </section>
 
-<h2>About Me</h2>
-<p>
-IBM i / AS400 Developer with experience in RPG, CL, DB2.
-Currently preparing for AWS Certified Cloud Practitioner.
-</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Experienced IBM i developer working on enterprise applications, batch job optimization,
+        and database management. Currently expanding cloud knowledge with AWS.
+      </p>
+    </section>
 
-<h2>Skills</h2>
-<ul>
-<li>IBM i (AS400)</li>
-<li>RPGLE</li>
-<li>CL Programming</li>
-<li>DB2</li>
-<li>AWS Cloud (Learning)</li>
-</ul>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">IBM i (AS400)</div>
+        <div class="card">RPGLE</div>
+        <div class="card">CL Programming</div>
+        <div class="card">DB2</div>
+        <div class="card">AWS Cloud</div>
+      </div>
+    </section>
 
-<h2>Projects</h2>
-<ul>
-<li>Banking System Automation</li>
-<li>Inventory Management in AS400</li>
-<li>Batch Processing Optimization</li>
-</ul>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Banking System Automation</h3>
+          <p>Automated batch processing for banking operations.</p>
+        </div>
+        <div class="card">
+          <h3>Inventory Management</h3>
+          <p>Developed AS400 based inventory system.</p>
+        </div>
+        <div class="card">
+          <h3>Batch Job Optimization</h3>
+          <p>Improved system performance by tuning jobs.</p>
+        </div>
+      </div>
+    </section>
 
-<h2>Certifications</h2>
-<ul>
-<li>AWS Certified Cloud Practitioner (In Progress)</li>
-</ul>
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        Worked on IBM i application development, performance tuning,
+        and database handling using DB2.
+      </p>
+    </section>
 
-<h2>Experience</h2>
-<p>
-Worked on IBM i application development and maintenance.
-Handled batch jobs, database management and performance tuning.
-</p>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: yourmail@email.com</p>
+      <p>LinkedIn: Add your LinkedIn profile link</p>
+    </section>
 
-<h2>Contact</h2>
-<p>
-LinkedIn: Add your LinkedIn link here
-Email: Add your Email here
-</p>
-
+    <footer>
+      <p>© 2026 Sathyaraja Chitravel</p>
+    </footer>
+  </div>
 </body>
 </html>
